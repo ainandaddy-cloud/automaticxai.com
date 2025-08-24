@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+  }
+
+  .dark {
+    @apply bg-gradient-main text-white;
+  }
+
+  .light {
+    @apply bg-gradient-main-light text-dark-900;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl sm:px-6 lg:px-8;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center px-8 py-4 font-semibold rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 transform hover:scale-105 relative overflow-hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+  }
+
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+
+  .btn:hover::before {
+    left: 100%;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-button hover:bg-gradient-button-hover text-dark-900 shadow-glow-yellow hover:shadow-glow-yellow-strong;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-dark-900 hover:shadow-glow-yellow;
+  }
+
+  .dark .btn-secondary {
+    @apply bg-transparent;
+  }
+
+  .light .btn-secondary {
+    @apply bg-transparent;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-glass border rounded-2xl transition-all duration-300 hover:scale-105;
+  }
+
+  .dark .glass-card {
+    @apply bg-glass border-white/10 shadow-glass hover:shadow-card-hover;
+  }
+
+  .light .glass-card {
+    @apply bg-glass-light border-dark-900/10 shadow-glass-light hover:shadow-card-hover-light;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold mb-6;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .dark .section-title {
+    @apply text-accent-500;
+  }
+
+  .light .section-title {
+    @apply text-accent-600;
+  }
+
+  .section-subtitle {
+    @apply text-xl md:text-2xl mb-12 max-w-4xl;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .dark .section-subtitle {
+    @apply text-text-secondary;
+  }
+
+  .light .section-subtitle {
+    @apply text-dark-600;
+  }
+
+  .hero-title {
+    @apply text-6xl md:text-7xl lg:text-8xl font-bold leading-none;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+  }
+
+  .dark .hero-title {
+    @apply text-white;
+  }
+
+  .light .hero-title {
+    @apply text-dark-900;
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+
+  .animate-on-scroll.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .glow-on-hover:hover {
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.3);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .dark ::-webkit-scrollbar-track {
+    @apply bg-dark-900;
+  }
+
+  .light ::-webkit-scrollbar-track {
+    @apply bg-light-700;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-accent-500 to-accent-600 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-accent-400 to-accent-500;
+  }
+
+  /* Interactive elements */
+  .interactive-card {
+    @apply transition-all duration-300 hover:scale-105 hover:-translate-y-2;
+  }
+
+  .interactive-card:hover {
+    box-shadow: 0 20px 40px rgba(250, 204, 21, 0.2);
+  }
+
+  /* Enhanced marquee */
+  .marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+
+  /* Enhanced button hover effects */
+  .btn-fill-hover {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-fill-hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(250, 204, 21, 0.3), transparent);
+    transition: left 0.5s ease;
+  }
+
+  .btn-fill-hover:hover::before {
+    left: 100%;
+  }
+
+  .btn-underline-hover {
+    position: relative;
+  }
+
+  .btn-underline-hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FACC15;
+    transition: width 0.3s ease;
+  }
+
+  .btn-underline-hover:hover::after {
+    width: 100%;
+  }
+
+  /* Enhanced animations */
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+
+  .animate-spin-slow {
+    animation: spin 3s linear infinite;
+  }
+
+  /* Enhanced blink animation for typewriter cursor */
+  .animate-blink {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+}

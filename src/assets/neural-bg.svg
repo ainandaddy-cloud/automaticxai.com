@@ -1,0 +1,122 @@
+<svg width="1440" height="600" viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.3">
+    <path d="M0 0H1440V600H0V0Z" fill="#0A1128"/>
+    <g>
+      <line x1="200" y1="100" x2="400" y2="200" stroke="url(#network0)" stroke-width="1.5"/>
+      <line x1="400" y1="200" x2="600" y2="150" stroke="url(#network1)" stroke-width="1.5"/>
+      <line x1="400" y1="200" x2="500" y2="300" stroke="url(#network2)" stroke-width="1.5"/>
+      <line x1="600" y1="150" x2="800" y2="250" stroke="url(#network3)" stroke-width="1.5"/>
+      <line x1="500" y1="300" x2="700" y2="350" stroke="url(#network4)" stroke-width="1.5"/>
+      <line x1="700" y1="350" x2="900" y2="300" stroke="url(#network5)" stroke-width="1.5"/>
+      <line x1="800" y1="250" x2="900" y2="300" stroke="url(#network6)" stroke-width="1.5"/>
+      <line x1="900" y1="300" x2="1100" y2="350" stroke="url(#network7)" stroke-width="1.5"/>
+      <line x1="1100" y1="350" x2="1200" y2="250" stroke="url(#network8)" stroke-width="1.5"/>
+      <line x1="1200" y1="250" x2="1000" y2="150" stroke="url(#network9)" stroke-width="1.5"/>
+      <line x1="1000" y1="150" x2="800" y2="250" stroke="url(#network10)" stroke-width="1.5"/>
+      <line x1="200" y1="400" x2="400" y2="450" stroke="url(#network11)" stroke-width="1.5"/>
+      <line x1="400" y1="450" x2="600" y2="400" stroke="url(#network12)" stroke-width="1.5"/>
+      <line x1="600" y1="400" x2="700" y2="350" stroke="url(#network13)" stroke-width="1.5"/>
+      <line x1="700" y1="350" x2="700" y2="500" stroke="url(#network14)" stroke-width="1.5"/>
+      <line x1="700" y1="500" x2="900" y2="450" stroke="url(#network15)" stroke-width="1.5"/>
+      <line x1="900" y1="450" x2="1100" y2="500" stroke="url(#network16)" stroke-width="1.5"/>
+      <line x1="1100" y1="500" x2="1300" y2="450" stroke="url(#network17)" stroke-width="1.5"/>
+      <line x1="1100" y1="350" x2="1100" y2="500" stroke="url(#network18)" stroke-width="1.5"/>
+      
+      <circle cx="200" cy="100" r="4" fill="#6600E4" fill-opacity="0.7"/>
+      <circle cx="400" cy="200" r="4" fill="#6600E4" fill-opacity="0.7"/>
+      <circle cx="600" cy="150" r="4" fill="#6600E4" fill-opacity="0.7"/>
+      <circle cx="800" cy="250" r="4" fill="#17C1FF" fill-opacity="0.7"/>
+      <circle cx="500" cy="300" r="4" fill="#6600E4" fill-opacity="0.7"/>
+      <circle cx="700" cy="350" r="4" fill="#17C1FF" fill-opacity="0.7"/>
+      <circle cx="900" cy="300" r="4" fill="#17C1FF" fill-opacity="0.7"/>
+      <circle cx="1100" cy="350" r="4" fill="#17C1FF" fill-opacity="0.7"/>
+      <circle cx="1200" cy="250" r="4" fill="#17C1FF" fill-opacity="0.7"/>
+      <circle cx="1000" cy="150" r="4" fill="#6600E4" fill-opacity="0.7"/>
+      <circle cx="200" cy="400" r="4" fill="#6600E4" fill-opacity="0.7"/>
+      <circle cx="400" cy="450" r="4" fill="#6600E4" fill-opacity="0.7"/>
+      <circle cx="600" cy="400" r="4" fill="#17C1FF" fill-opacity="0.7"/>
+      <circle cx="700" cy="500" r="4" fill="#17C1FF" fill-opacity="0.7"/>
+      <circle cx="900" cy="450" r="4" fill="#17C1FF" fill-opacity="0.7"/>
+      <circle cx="1100" cy="500" r="4" fill="#17C1FF" fill-opacity="0.7"/>
+      <circle cx="1300" cy="450" r="4" fill="#17C1FF" fill-opacity="0.7"/>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="network0" x1="200" y1="100" x2="400" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network1" x1="400" y1="200" x2="600" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network2" x1="400" y1="200" x2="500" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network3" x1="600" y1="150" x2="800" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network4" x1="500" y1="300" x2="700" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network5" x1="700" y1="350" x2="900" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network6" x1="800" y1="250" x2="900" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network7" x1="900" y1="300" x2="1100" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network8" x1="1100" y1="350" x2="1200" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network9" x1="1200" y1="250" x2="1000" y2="150" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network10" x1="1000" y1="150" x2="800" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network11" x1="200" y1="400" x2="400" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network12" x1="400" y1="450" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network13" x1="600" y1="400" x2="700" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network14" x1="700" y1="350" x2="700" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network15" x1="700" y1="500" x2="900" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network16" x1="900" y1="450" x2="1100" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network17" x1="1100" y1="500" x2="1300" y2="450" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+    <linearGradient id="network18" x1="1100" y1="350" x2="1100" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6600E4"/>
+      <stop offset="1" stop-color="#00A3D9"/>
+    </linearGradient>
+  </defs>
+</svg>
