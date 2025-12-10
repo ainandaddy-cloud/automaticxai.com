@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle, Play, ArrowRight, Zap, TrendingUp, Clock } from 'lucide-react';
+import { CheckCircle, ArrowRight, Zap, TrendingUp, Clock } from 'lucide-react';
 import { useInView } from 'react-intersection-observer';
 import { Waves } from '../ui/waves-background';
 import TypewriterText from '../ui/TypewriterText';
@@ -109,7 +109,7 @@ const Hero: React.FC = () => {
             </motion.div>
             
             {/* CTA Buttons */}
-            <motion.div 
+            <motion.div
               className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-16"
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -122,17 +122,8 @@ const Hero: React.FC = () => {
                 whileTap={{ scale: 0.95 }}
               >
                 <CheckCircle className="mr-3 h-5 w-5 md:h-6 md:w-6" />
-                START YOUR TRANSFORMATION
+                BOOK A CALL NOW FOR FREE
                 <ArrowRight className="ml-3 h-5 w-5 md:h-6 md:w-6" />
-              </motion.button>
-              
-              <motion.button 
-                className="btn btn-secondary text-lg md:text-xl font-space-grotesk font-semibold px-10 py-5 md:px-12 md:py-6"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Play className="mr-3 h-5 w-5 md:h-6 md:w-6" />
-                WATCH DEMO
               </motion.button>
             </motion.div>
 
