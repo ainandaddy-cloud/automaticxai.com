@@ -59,11 +59,11 @@
   }
 
   .btn-primary {
-    @apply bg-gradient-button hover:bg-gradient-button-hover text-dark-900 shadow-glow-yellow hover:shadow-glow-yellow-strong;
+    @apply bg-gradient-button hover:bg-gradient-button-hover text-white shadow-glow-yellow hover:shadow-glow-yellow-strong;
   }
 
   .btn-secondary {
-    @apply border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-dark-900 hover:shadow-glow-yellow;
+    @apply border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white hover:shadow-glow-yellow;
   }
 
   .dark .btn-secondary {
@@ -144,7 +144,7 @@
   }
 
   .glow-on-hover:hover {
-    box-shadow: 0 0 20px rgba(250, 204, 21, 0.3);
+    box-shadow: 0 0 20px rgba(52, 178, 123, 0.3);
   }
 
   /* Custom scrollbar */
@@ -174,7 +174,7 @@
   }
 
   .interactive-card:hover {
-    box-shadow: 0 20px 40px rgba(250, 204, 21, 0.2);
+    box-shadow: 0 20px 40px rgba(52, 178, 123, 0.2);
   }
 
   /* Enhanced marquee */
@@ -199,7 +199,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(250, 204, 21, 0.3), transparent);
+    background: linear-gradient(90deg, transparent, rgba(52, 178, 123, 0.3), transparent);
     transition: left 0.5s ease;
   }
 
@@ -218,7 +218,7 @@
     left: 0;
     width: 0;
     height: 2px;
-    background: #FACC15;
+    background: #34B27B;
     transition: width 0.3s ease;
   }
 

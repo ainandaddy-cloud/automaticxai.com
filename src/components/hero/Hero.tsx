@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
       {/* Animated background with increased wave intensity */}
       <div className="absolute inset-0">
         <Waves
-          lineColor={isDark ? "rgba(250, 204, 21, 0.30)" : "rgba(250, 204, 21, 0.22)"}
+          lineColor={isDark ? "rgba(52, 178, 123, 0.30)" : "rgba(52, 178, 123, 0.22)"}
           backgroundColor="transparent"
           waveSpeedX={0.008}
           waveSpeedY={0.003}
