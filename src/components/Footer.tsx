@@ -1,5 +1,6 @@
 import React from 'react';
-import { Brain, Linkedin, Instagram, Twitter, Mail } from 'lucide-react';
+import { Brain, Linkedin, Instagram, Twitter, Mail, Clock } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { useTheme } from '../contexts/ThemeContext';
 
 const Footer: React.FC = () => {
@@ -65,18 +66,17 @@ const Footer: React.FC = () => {
             }`}>Quick Links</h3>
             <ul className="space-y-2">
               {[
-                { name: 'Our Mission', href: '#mission' },
+                { name: 'Home', href: '#hero' },
                 { name: 'Services', href: '#services' },
-                { name: 'AI Impact', href: '#impact' },
                 { name: 'Testimonials', href: '#testimonials' },
                 { name: 'Contact Us', href: '#contact' }
               ].map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <a
+                    href={link.href}
                     className={`transition-colors btn-underline-hover ${
-                      isDark 
-                        ? 'text-text-secondary hover:text-accent-400' 
+                      isDark
+                        ? 'text-text-secondary hover:text-accent-400'
                         : 'text-dark-600 hover:text-accent-600'
                     }`}
                   >
@@ -92,12 +92,12 @@ const Footer: React.FC = () => {
             <h3 className={`font-semibold text-lg mb-4 font-inter ${
               isDark ? 'text-white' : 'text-dark-900'
             }`}>Contact</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               <li className={isDark ? 'text-text-secondary' : 'text-dark-600'}>
                 <strong className={isDark ? 'text-white' : 'text-dark-900'}>Email:</strong>
                 <br />
-                <a 
-                  href="mailto:mohammedainan3@gmail.com" 
+                <a
+                  href="mailto:mohammedainan3@gmail.com"
                   className={`transition-colors btn-underline-hover ${
                     isDark ? 'hover:text-accent-400' : 'hover:text-accent-600'
                   }`}
@@ -105,15 +105,33 @@ const Footer: React.FC = () => {
                   mohammedainan3@gmail.com
                 </a>
               </li>
-              <li className={isDark ? 'text-text-secondary' : 'text-dark-600'}>
-                <strong className={isDark ? 'text-white' : 'text-dark-900'}>Schedule:</strong>
-                <br />
-                <span>Mon - Fri: <span className="text-accent-500">9:00 AM - 6:00 PM</span></span>
+              <li>
+                <motion.div
+                  className={`flex items-center gap-2 px-3 py-2 rounded-lg glass-card interactive-card ${
+                    isDark ? 'bg-accent-500/10' : 'bg-accent-500/5'
+                  }`}
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <motion.div
+                    animate={{ scale: [1, 1.2, 1] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                  >
+                    <Clock className="w-4 h-4 text-accent-500" />
+                  </motion.div>
+                  <div className="flex flex-col">
+                    <strong className={`text-sm ${isDark ? 'text-accent-400' : 'text-accent-600'}`}>
+                      Available 24/7
+                    </strong>
+                    <span className={`text-xs ${isDark ? 'text-text-secondary' : 'text-dark-600'}`}>
+                      Always ready to help
+                    </span>
+                  </div>
+                </motion.div>
               </li>
               <li>
-                <a 
-                  href="#contact" 
-                  className={`font-medium transition-colors btn-underline-hover ${
+                <a
+                  href="#contact"
+                  className={`font-medium transition-colors btn-underline-hover inline-block ${
                     isDark ? 'text-accent-400 hover:text-accent-300' : 'text-accent-600 hover:text-accent-500'
                   }`}
                 >

@@ -239,7 +239,15 @@ const SolutionSection: React.FC = () => {
           className="text-center mt-12"
         >
           <button
-            onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => {
+              const element = document.querySelector('#contact')
+              if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                setTimeout(() => {
+                  window.scrollBy({ top: -100, behavior: 'smooth' })
+                }, 300)
+              }
+            }}
             className="btn btn-primary text-lg px-10 py-5"
           >
             <Zap className="w-5 h-5 mr-2" />

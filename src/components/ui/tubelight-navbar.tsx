@@ -46,14 +46,12 @@ export function NavBar({ items, className }: NavBarProps) {
   }, [])
 
   const handleNavClick = (item: NavItem) => {
-    // Smooth scroll to section
     const element = document.querySelector(item.url)
     if (element) {
-      const offsetTop = element.getBoundingClientRect().top + window.pageYOffset - 100
-      window.scrollTo({
-        top: offsetTop,
-        behavior: 'smooth'
-      })
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      setTimeout(() => {
+        window.scrollBy({ top: -100, behavior: 'smooth' })
+      }, 300)
     }
   }
 

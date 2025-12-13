@@ -116,7 +116,15 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 1 }}
             >
               <motion.button
-                onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  const element = document.querySelector('#contact')
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                    setTimeout(() => {
+                      window.scrollBy({ top: -100, behavior: 'smooth' })
+                    }, 300)
+                  }
+                }}
                 className="btn btn-primary text-lg md:text-xl font-space-grotesk font-semibold px-10 py-5 md:px-12 md:py-6"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
