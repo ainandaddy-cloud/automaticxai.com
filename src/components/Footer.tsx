@@ -1,7 +1,8 @@
 import React from 'react';
-import { Brain, Linkedin, Instagram, Twitter, Mail, Clock } from 'lucide-react';
+import { Linkedin, Instagram, Twitter, Mail, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTheme } from '../contexts/ThemeContext';
+import logoImage from '../assets/gemini_generated_image_cdt75pcdt75pcdt7.png';
 
 const Footer: React.FC = () => {
   const { isDark } = useTheme();
@@ -19,9 +20,11 @@ const Footer: React.FC = () => {
             <div className={`flex items-center space-x-2 mb-4 ${
               isDark ? 'text-white' : 'text-dark-900'
             }`}>
-              <div className="w-10 h-10 rounded-lg bg-gradient-button flex items-center justify-center">
-                <Brain className="w-6 h-6 text-dark-900" />
-              </div>
+              <img
+                src={logoImage}
+                alt="AutomaticxAI Logo"
+                className="w-10 h-10 object-contain"
+              />
               <span className="text-xl font-semibold font-inter">AutomaticxAI</span>
             </div>
             
