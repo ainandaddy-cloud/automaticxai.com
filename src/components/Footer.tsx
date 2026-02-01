@@ -100,12 +100,12 @@ const Footer: React.FC = () => {
                 <strong className={isDark ? 'text-white' : 'text-dark-900'}>Email:</strong>
                 <br />
                 <a
-                  href="mailto:mohammedainan3@gmail.com"
+                  href="mailto:ainan@automaticxai.online"
                   className={`transition-colors btn-underline-hover ${
                     isDark ? 'hover:text-accent-400' : 'hover:text-accent-600'
                   }`}
                 >
-                  mohammedainan3@gmail.com
+                  ainan@automaticxai.online
                 </a>
               </li>
               <li>

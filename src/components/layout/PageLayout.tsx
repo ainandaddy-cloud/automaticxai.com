@@ -9,7 +9,7 @@ interface PageLayoutProps {
 const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
   return (
     <ThemeProvider>
-      <div className="min-h-screen font-inter overflow-hidden">
+      <div className="min-h-screen font-inter overflow-x-hidden">
         <Navigation />
         <main>
           {children}
