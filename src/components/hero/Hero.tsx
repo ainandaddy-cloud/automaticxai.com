@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
   const { isDark } = useTheme();
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-32 pb-12 overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center pt-32 pb-12 overflow-x-hidden">
       {/* Animated background with increased wave intensity */}
       <div className="absolute inset-0">
         <Waves

@@ -21,7 +21,7 @@ const WhyChooseUs: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 relative overflow-hidden">
+    <section className="py-12 relative overflow-x-hidden">
       {/* Background effects - Increased intensity and radius */}
       <div className="absolute inset-0 pointer-events-none">
         <div className={`absolute top-0 left-0 w-72 sm:w-144 h-72 sm:h-144 rounded-full filter blur-3xl animate-float ${

@@ -39,7 +39,7 @@ const ProblemSection: React.FC = () => {
   ];
 
   return (
-    <section id="problem" className="py-16 relative overflow-hidden">
+    <section id="problem" className="py-16 relative overflow-x-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className={`absolute top-1/4 right-1/4 w-96 h-96 rounded-full filter blur-3xl animate-float ${

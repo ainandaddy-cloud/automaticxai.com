@@ -47,9 +47,9 @@ const CTA: React.FC = () => {
   ];
 
   return (
-    <section 
-      id="contact" 
-      className="py-16 relative overflow-hidden"
+    <section
+      id="contact"
+      className="py-16 relative overflow-x-hidden"
     >
       {/* Background effects */}
       <div className="absolute inset-0 pointer-events-none">
