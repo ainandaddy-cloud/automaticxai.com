@@ -300,7 +300,7 @@ export function Waves({
     }
 
     function onTouchMove(e: TouchEvent) {
-      e.preventDefault()
+      // Do NOT call e.preventDefault() — that blocks mobile page scrolling
       const touch = e.touches[0]
       updateMouse(touch.clientX, touch.clientY)
     }
@@ -324,7 +324,7 @@ export function Waves({
     requestAnimationFrame(tick)
     window.addEventListener("resize", onResize)
     window.addEventListener("mousemove", onMouseMove)
-    window.addEventListener("touchmove", onTouchMove, { passive: false })
+    window.addEventListener("touchmove", onTouchMove, { passive: true })
 
     return () => {
       window.removeEventListener("resize", onResize)
