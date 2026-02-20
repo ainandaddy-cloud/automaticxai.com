@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
                 { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
                 { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
                 { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
-                { icon: Mail, href: "mailto:mohammedainan3@gmail.com", label: "Email" }
+                { icon: Mail, href: "mailto:ainan@automaticxai.online", label: "Email" }
               ].map((social, index) => {
                 const IconComponent = social.icon;
                 return (

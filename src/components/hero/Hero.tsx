@@ -34,12 +34,10 @@ const Hero: React.FC = () => {
 
       {/* Floating orbs */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className={`absolute top-1/4 left-1/4 w-96 h-96 rounded-full filter blur-3xl animate-float ${
-          isDark ? 'bg-accent-500/16' : 'bg-accent-500/8'
-        }`}></div>
-        <div className={`absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full filter blur-3xl animate-float ${
-          isDark ? 'bg-accent-500/13' : 'bg-accent-500/7'
-        }`} style={{ animationDelay: '2s' }}></div>
+        <div className={`absolute top-1/4 left-1/4 w-96 h-96 rounded-full filter blur-3xl animate-float ${isDark ? 'bg-accent-500/16' : 'bg-accent-500/8'
+          }`}></div>
+        <div className={`absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full filter blur-3xl animate-float ${isDark ? 'bg-accent-500/13' : 'bg-accent-500/7'
+          }`} style={{ animationDelay: '2s' }}></div>
       </div>
 
       <div className="container relative z-10">
@@ -52,48 +50,46 @@ const Hero: React.FC = () => {
           >
             {/* Main Headline with Typewriter */}
             <div className="text-center">
-              <motion.div 
+              <motion.div
                 className="block mb-6"
                 initial={{ opacity: 0, x: -50 }}
                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <span className={`text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black font-outfit tracking-tight leading-none ${
-                  isDark ? 'text-white' : 'text-dark-900'
-                }`}>
+                <span className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black font-outfit tracking-tight leading-none ${isDark ? 'text-white' : 'text-dark-900'
+                  }`}>
                   AI THAT
                 </span>
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="mb-6"
               >
-                <TypewriterText 
-                  words={['TRANSFORMS', 'OPTIMIZES', 'REVOLUTIONIZES', 'ACCELERATES', 'EMPOWERS']} 
+                <TypewriterText
+                  words={['TRANSFORMS', 'OPTIMIZES', 'REVOLUTIONIZES', 'ACCELERATES', 'EMPOWERS']}
                   speed={100}
                   deleteSpeed={50}
                   pauseTime={1500}
-                  className="text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black font-outfit text-accent-500 tracking-tight leading-none"
+                  className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black font-outfit text-accent-500 tracking-tight leading-none"
                 />
               </motion.div>
-              
-              <motion.div 
+
+              <motion.div
                 className="block"
                 initial={{ opacity: 0, x: 50 }}
                 animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <span className={`text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black font-outfit tracking-tight leading-none ${
-                  isDark ? 'text-white' : 'text-dark-900'
-                }`}>
+                <span className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-black font-outfit tracking-tight leading-none ${isDark ? 'text-white' : 'text-dark-900'
+                  }`}>
                   YOUR BUSINESS
                 </span>
               </motion.div>
             </div>
-            
+
             {/* Subheadline */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -101,13 +97,12 @@ const Hero: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.8 }}
               className="mt-12"
             >
-              <p className={`text-xl md:text-2xl lg:text-3xl font-space-grotesk font-medium leading-relaxed max-w-5xl mx-auto ${
-                isDark ? 'text-text-secondary' : 'text-dark-600'
-              }`}>
+              <p className={`text-lg sm:text-xl md:text-2xl lg:text-3xl font-space-grotesk font-medium leading-relaxed max-w-5xl mx-auto px-4 sm:px-0 ${isDark ? 'text-text-secondary' : 'text-dark-600'
+                }`}>
                 Harness the power of intelligent automation that doesn't just optimize—it transforms your operations.
               </p>
             </motion.div>
-            
+
             {/* CTA Buttons */}
             <motion.div
               className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-16"
@@ -136,7 +131,7 @@ const Hero: React.FC = () => {
             </motion.div>
 
             {/* Trust indicators */}
-            <motion.div 
+            <motion.div
               className="flex flex-wrap justify-center items-center gap-6 md:gap-8 mt-16"
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
@@ -147,7 +142,7 @@ const Hero: React.FC = () => {
                 { value: '99.9%', label: 'Uptime Guaranteed', delay: 0.4 },
                 { value: '24/7', label: 'Expert Support', delay: 0.6 }
               ].map((item, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
@@ -175,7 +170,7 @@ const Hero: React.FC = () => {
           className="mt-24"
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <motion.div 
+            <motion.div
               className="glass-card p-8 interactive-card group"
               whileHover={{ scale: 1.02 }}
             >
@@ -191,8 +186,8 @@ const Hero: React.FC = () => {
                 ].map((metric, index) => {
                   const IconComponent = metric.icon;
                   return (
-                    <motion.div 
-                      key={index} 
+                    <motion.div
+                      key={index}
                       className="text-center p-6 rounded-xl glass-card group"
                       whileHover={{ scale: 1.05, rotate: 1 }}
                       transition={{ type: "spring", stiffness: 300 }}
@@ -201,16 +196,15 @@ const Hero: React.FC = () => {
                       <div className={`text-3xl md:text-4xl font-black font-outfit ${metric.color} mb-3`}>
                         {metric.value}
                       </div>
-                      <div className={`text-xs font-semibold font-space-grotesk tracking-wider uppercase ${
-                        isDark ? 'text-text-secondary' : 'text-dark-600'
-                      }`}>{metric.label}</div>
+                      <div className={`text-xs font-semibold font-space-grotesk tracking-wider uppercase ${isDark ? 'text-text-secondary' : 'text-dark-600'
+                        }`}>{metric.label}</div>
                     </motion.div>
                   );
                 })}
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               className="glass-card p-8 interactive-card group"
               whileHover={{ scale: 1.02 }}
             >
@@ -225,15 +219,13 @@ const Hero: React.FC = () => {
                 ].map((metric, index) => (
                   <div key={index}>
                     <div className="flex justify-between mb-4">
-                      <span className={`font-semibold font-space-grotesk text-sm tracking-wider uppercase ${
-                        isDark ? 'text-white' : 'text-dark-900'
-                      }`}>{metric.label}</span>
+                      <span className={`font-semibold font-space-grotesk text-sm tracking-wider uppercase ${isDark ? 'text-white' : 'text-dark-900'
+                        }`}>{metric.label}</span>
                       <span className="font-bold font-outfit text-xl text-accent-500">{metric.value}%</span>
                     </div>
-                    <div className={`w-full h-4 rounded-full overflow-hidden border ${
-                      isDark ? 'bg-dark-700/50 border-white/10' : 'bg-light-600/50 border-dark-900/10'
-                    }`}>
-                      <motion.div 
+                    <div className={`w-full h-4 rounded-full overflow-hidden border ${isDark ? 'bg-dark-700/50 border-white/10' : 'bg-light-600/50 border-dark-900/10'
+                      }`}>
+                      <motion.div
                         initial={{ width: 0 }}
                         animate={inView ? { width: `${metric.value}%` } : { width: 0 }}
                         transition={{ duration: 1.5, delay: 1.6 + (index * 0.2) }}
